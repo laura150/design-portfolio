@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 74px;
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: rgb(197, 197, 197);
+  line-height: 30px;
+  font-size: 18px;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+.hubbtitle {
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.boxone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.containergrid {
+  /* background-color: green; */
+}
+
+.containergrid p {
+  line-height: 40px;
+}
+
+.titlegrid {
+  color: rgb(151, 150, 150);
+}
+.projectoverview p {
+  color: rgb(197, 197, 197);
+}
+.ptitle {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+.pimage {
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pimagekid {
+  width: 100%;
+  height: 100%;
+}
+
+.personaimg {
+  margin: auto;
+  width: 70%;
+  object-fit: cover;
+  margin-top: 50px;
+}
+.personakid {
+  width: 100%;
+}
+.buttonsdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 290px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 6px 10px;
+  width: 120px;
+  background-color: rgb(179, 2, 2);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.butt {
+  margin-top: 50px;
+}
+
+.buttons:hover {
+  background-color: red;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 900;
+}
+.buttons a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1264px) {
+  .boxone {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 932px) {
+  .boxone {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hubbtitle {
+    font-size: 40px;
+  }
+  .ptitle {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 538px) {
+    .boxone {
+      grid-template-columns: 1fr;
+    }
+  }
+}
