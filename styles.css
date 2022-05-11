@@ -438,10 +438,15 @@ body {
 }
 .votingtext {
   width: 300px;
-  margin-right: 50px;
+  margin-left: 50px;
   line-height: 30px;
 }
 .hubtext {
+  width: 300px;
+  margin-right: 50px;
+  line-height: 30px;
+}
+.saveittext {
   width: 300px;
   margin-left: 50px;
   line-height: 30px;
@@ -449,7 +454,7 @@ body {
 
 .bolttext {
   width: 300px;
-  margin-left: 50px;
+  margin-right: 50px;
   line-height: 30px;
 }
 
@@ -941,6 +946,13 @@ footer p {
     text-align: center;
     margin-top: 50px;
   }
+  .saveittext {
+    order: 2;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
 
   .mockupone {
     width: 90%;
@@ -1058,6 +1070,9 @@ footer p {
   .hubtext {
     margin-top: 20px;
   }
+  .savittext {
+    margin-top: 20px;
+  }
   .bolttext {
     margin-top: 20px;
   }
@@ -1075,6 +1090,9 @@ footer p {
     margin-top: 0px;
   }
   .hubtext {
+    margin-top: 0px;
+  }
+  .saveittext {
     margin-top: 0px;
   }
   .bolttext {
@@ -1096,6 +1114,10 @@ footer p {
     margin-top: -20px;
   }
   .hubtext {
+    width: 90%;
+    margin-top: -20px;
+  }
+  .saveittext {
     width: 90%;
     margin-top: -20px;
   }
@@ -1124,6 +1146,9 @@ footer p {
     margin-bottom: -30px;
   }
   .hubtext {
+    margin-bottom: -30px;
+  }
+  .saveittext {
     margin-bottom: -30px;
   }
   .bolttext {
@@ -1159,6 +1184,10 @@ footer p {
     margin-bottom: -70px;
   }
   .votingtext {
+    margin-top: -70px;
+    margin-bottom: -60px;
+  }
+  .saveittext {
     margin-top: -70px;
     margin-bottom: -60px;
   }

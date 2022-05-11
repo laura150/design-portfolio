@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 74px;
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: #c5c5c5;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+li {
+  color: rgb(197, 197, 197);
+  line-height: 30px;
+  font-size: 20px;
+}
+.container {
+  width: 85%;
+  margin: auto;
+  /* background-color: blue; */
+}
+.hubbtitle {
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.boxone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.containergrid {
+  /* background-color: green; */
+}
+
+.containergrid p {
+  line-height: 40px;
+}
+
+.titlegrid {
+  color: rgb(151, 150, 150);
+}
+.projectoverview p {
+  color: rgb(197, 197, 197);
+}
+.ptitle {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+.ptitlesub {
+  font-weight: 700;
+  font-size: 24px;
+
+  color: #e9e7e7;
+}
+
+.headingcon {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.linetwo {
+  width: 20px;
+  height: 5px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #e9e7e7;
+}
+
+.pimage {
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pimagetwo {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pimagethree {
+  width: 20%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.one {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.pimagekid {
+  width: 100%;
+  height: 100%;
+}
+
+.personaimg {
+  margin: auto;
+  width: 70%;
+  object-fit: cover;
+  margin-top: 50px;
+}
+.personakid {
+  width: 100%;
+}
+.buttonsdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 290px;
+  background-color: green;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 10px 10px;
+  width: 130px;
+  background-color: rgb(179, 2, 2);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.butt {
+  margin-top: 50px;
+}
+
+.buttons:hover {
+  background-color: red;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 900;
+}
+.buttons a {
+  color: white;
+  text-decoration: none;
+}
+.question {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.question p {
+  font-weight: 900;
+  font-size: 24px;
+}
+.textcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.textanswer {
+  background-color: #525151;
+  width: 47%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.textanswer p {
+  color: white;
+  margin-left: 50px;
+}
+.textanswer h3 {
+  color: white;
+  text-align: right;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.line {
+  width: 5px;
+  height: 50px;
+  background-color: #022081;
+  margin-right: 20px;
+}
+.see {
+}
+.imagecon {
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+  display: flex;
+  align-items: top;
+}
+.shift {
+  margin-left: 50px;
+}
+.personas {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+@media screen and (min-width: 1550px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1264px) {
+  .boxone {
+    gap: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    width: 90%;
+  }
+
+  .pimagethree {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .boxone {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hubbtitle {
+    font-size: 40px;
+  }
+  .ptitle {
+    font-size: 22px;
+  }
+  .question p {
+    font-size: 20px;
+    font-weight: 500px;
+  }
+  @media screen and (max-width: 786px) {
+    .textcontainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .textanswer {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .personas {
+      grid-template-columns: 1fr;
+    }
+    .pimagetwo {
+      width: 100%;
+    }
+    .pimagethree {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 538px) {
+    .boxone {
+      grid-template-columns: 1fr;
+    }
+    .pimagethree {
+      width: 50%;
+    }
+  }
+}
