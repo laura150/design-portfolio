@@ -66,7 +66,7 @@ li {
   color: rgb(197, 197, 197);
 }
 .ptitle {
-  margin-top: 50px;
+  margin-top: 70px;
   font-weight: 700;
   font-size: 30px;
   color: white;
@@ -219,10 +219,10 @@ li {
   margin-left: 50px;
 }
 .personas {
-  margin-top: 50px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  column-gap: 20px;
 }
 @media screen and (min-width: 1550px) {
   .container {
@@ -234,6 +234,9 @@ li {
     gap: 40px;
   }
   p {
+    font-size: 18px;
+  }
+  li {
     font-size: 18px;
   }
   .ptitlesub {
@@ -275,6 +278,7 @@ li {
     }
     .personas {
       grid-template-columns: 1fr;
+      row-gap: 20px;
     }
     .pimagetwo {
       width: 100%;
@@ -286,6 +290,9 @@ li {
   @media screen and (max-width: 600px) {
     p {
       font-size: 16px;
+    }
+    li {
+      font-size: 18px;
     }
     .ptitlesub {
       font-size: 18px;
