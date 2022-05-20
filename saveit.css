@@ -153,6 +153,11 @@ li {
   font-weight: 900;
 }
 
+.kid {
+  width: 200px;
+  margin-left: 10px;
+}
+
 .butt {
   margin-top: 50px;
 }
