@@ -78,6 +78,9 @@ li {
 
   color: #e9e7e7;
 }
+.sub {
+  margin-top: 50px;
+}
 
 .headingcon {
   display: flex;
