@@ -10,9 +10,8 @@
 }
 
 .casestudytitle {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 50px;
   color: white;
   text-align: center;
   margin-top: 40px;
@@ -25,7 +24,7 @@
   grid-gap: 50px;
 }
 .designsection {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .projectone {
@@ -320,7 +319,7 @@ body {
   align-items: center;
 }
 .aboutheading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -416,7 +415,7 @@ body {
 }
 
 .projectheading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   color: white;
 }
