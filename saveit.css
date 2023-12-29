@@ -22,6 +22,7 @@ p {
   margin-bottom: 10px;
 }
 
+
 ul {
   margin-top: 30px;
 }
@@ -34,12 +35,70 @@ li {
 .container {
   width: 85%;
   margin: auto;
-  /* background-color: blue; */
 }
+
+/* SOME ECCOM STYLES */
+
+.list {
+  color: #c5c5c5;
+  line-height: 30px;
+  font-size: 20px;
+  
+}
+
+.barchart{
+  margin-top: 50px;
+  width: 40%;
+  margin: auto;
+}
+
+.ptitlesubecom {
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(243, 242, 242);
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+ 
+}
+
+.prosandcons{
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(243, 242, 242);
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.kayakimg{
+  width: 50%; 
+  float: left; 
+  margin-right: 30px; 
+  margin-bottom: 10px;
+}
+.mobilerespecom {
+  margin-top: 300px;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+/* ENDS HERE */
+
+
+
 .hubbtitle {
   text-align: left;
   color: white;
   font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hubbtitleecom {
+  text-align: left;
+  color: white;
+  font-size: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -101,6 +160,7 @@ li {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .pimagetwo {
   width: 70%;
   margin: auto;
@@ -240,6 +300,9 @@ li {
   li {
     font-size: 18px;
   }
+  .list{
+    font-size: 18px;
+  }
   .ptitlesub {
     font-size: 20px;
   }
@@ -268,6 +331,8 @@ li {
     font-size: 20px;
     font-weight: 500px;
   }
+
+  
   @media screen and (max-width: 786px) {
     .textcontainer {
       display: flex;
@@ -295,7 +360,13 @@ li {
     li {
       font-size: 18px;
     }
+    .list{
+      font-size: 16px;
+    }
     .ptitlesub {
+      font-size: 18px;
+    }
+    .ptitlesubecom{
       font-size: 18px;
     }
   }
@@ -306,5 +377,17 @@ li {
     .pimagethree {
       width: 50%;
     }
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .prosandcons{
+    font-size: 16px;
+  }
+  .kayakimg{
+    width: 100%; 
+    margin-right: 30px; 
+    margin-bottom: 10px;
   }
 }
