@@ -22,7 +22,6 @@ p {
   margin-bottom: 10px;
 }
 
-
 ul {
   margin-top: 30px;
 }
@@ -35,6 +34,20 @@ li {
 .container {
   width: 85%;
   margin: auto;
+}
+
+.competitor{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 70px;
+  
+}
+.competitorimg{
+  width: 50%;
 }
 
 /* SOME ECCOM STYLES */
@@ -60,6 +73,14 @@ li {
   margin-top: 10px;
   text-transform: uppercase;
  
+}
+.ptitlesubecomsub{
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(243, 242, 242);
+  
+  margin-top: 20px;
+  
 }
 
 .prosandcons{
@@ -108,10 +129,6 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 70px;
-}
-
-.containergrid {
-  /* background-color: green; */
 }
 
 .containergrid p {
@@ -239,20 +256,24 @@ li {
 }
 .textcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: top;
 }
 
 .textanswer {
-  background-color: #525151;
+  background-color: #2c2c2c;
   width: 47%;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  
 }
 
 .textanswer p {
-  margin-left: 50px;
+  margin-left: 30px;
+  
 }
 .textanswer h3 {
   color: white;
@@ -267,8 +288,7 @@ li {
   background-color: #022081;
   margin-right: 20px;
 }
-.see {
-}
+
 .imagecon {
   margin-top: 30px;
   margin-bottom: 100px;
@@ -285,11 +305,23 @@ li {
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
 }
+
 @media screen and (min-width: 1550px) {
   .container {
     width: 70%;
   }
+  .competitor{
+    width: 100%;
+    
+  }
 }
+
+@media screen and (max-width: 1356px) {
+  .competitor {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1264px) {
   .boxone {
     gap: 40px;
@@ -307,6 +339,19 @@ li {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 1097px) {
+  .competitor {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .competitorimg{
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 1036px) {
   .container {
     width: 90%;
@@ -330,6 +375,9 @@ li {
   .question p {
     font-size: 20px;
     font-weight: 500px;
+  }
+  .competitorimg {
+    width: 70%;
   }
 
   
@@ -368,6 +416,10 @@ li {
     }
     .ptitlesubecom{
       font-size: 18px;
+    }
+    
+    .competitorimg{
+      width: 100%;
     }
   }
   @media screen and (max-width: 538px) {
