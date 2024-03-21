@@ -16,7 +16,7 @@
             <div class='linksmodal'>
 
             <div class='ctanav modal'>
-                <a href='https://docs.google.com/uc?export=download&id=10Py1zlwuSvqZ6UnGzqJNvtvgXOLLEzqg' class=''>Download CV</a>
+                <a href='https://docs.google.com/uc?export=download&id=1K6G5qJFsAe7vmdTOwAAHy5uPUwpNc42Q' class=''>Download CV</a>
             </div>
                 <div onclick="home()" class='linkchild'>
                     <a href='#' onclick='closemenu()'>Home</a>
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class='navbutton'>
-                    <a href='https://docs.google.com/uc?export=download&id=1ntlNrH3Us4nZ5Q9RdmS9wAyLwnX1qi_E' class="navbuttontext" >Download CV</a>
+                    <a href='https://docs.google.com/uc?export=download&id=1K6G5qJFsAe7vmdTOwAAHy5uPUwpNc42Q' class="navbuttontext" >Download CV</a>
                 </div>
             </div>
 
@@ -65,6 +65,8 @@
                 <div class="toptext">
                     <p class="firsttext">HELLO, I'M LAURA </p>
                     <p class='secondtext'>UI/UX Designer, Product Designer and Web Designer</p> 
+                    <!-- <p style="color:rgba(197, 197, 197, 1); text-align: center; margin-top: 10px; font-size: 18px; line-height: 30px;">I have 3 years ecperience working with organizations and businesses to creat stunning and user friendly 
+                        digital products for over 1 millions users around the world </p> -->
                     
                 </div>
 
@@ -116,7 +118,7 @@
                     </div>
                     <div class="list">
                         <img src='/images/check.svg' class="listdot" />
-                        <p class="everytext">Invision</p>
+                        <p class="everytext">Webflow</p>
                     </div>
                 </div>
                 <div class="zzz">
@@ -141,6 +143,57 @@
 
     <section class='projects' id='projects'>
            
+                <div class="projectheading">
+                    <div class='casestudytitle'> Webflow Projects</div>
+                    <img src='/images/squiglyline.svg' class="skillssquigly" />
+                </div>
+
+                <div class='case'>
+                    <div class='projectone'>
+                        <div>
+                            <div class='container'>
+                                <img src='images/lavenderhomespreview.png' class='containerpic' alt='an image' />
+
+                                <div class="overlay">
+                                    <div class='butt'>
+                                        <a href='https://lauras-marvelous-site-ff8fe4.webflow.io/' class=''>View Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class='projecttext'>
+                            <p class='seerio'>Lavender Homes</p>
+                            <p class="everytext">Webflow | Architecture | Website</p>
+                        </div>
+
+                    </div>
+
+                    <div class='projectone'>
+
+                        <div>
+                            <div class='container'>
+                                <img src='images/guldapreview2.png' class='containerpic' alt='an image' />
+
+                                <!-- <div class="overlay">
+                                    <div class='butt'>
+                                        <a href='/ecommerce.html' class=''>View Website</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                       
+                        <div class='projecttext'>
+                            <p class='seerio'> Gulda Agency</p>
+                            <p class="everytext">Webflow | Agency | Client Request</p>
+                        </div>
+
+                    </div>
+
+                 </div>
+
+                
+
                 <div class="projectheading">
                     <div class='casestudytitle'> UX Case Studies</div>
                     <img src='/images/squiglyline.svg' class="skillssquigly" />
@@ -230,7 +283,7 @@
 
             <div class='designsection'>
         <div class="projectheading">
-            <div class='casestudytitle'> UI Designs</div>
+            <div class='casestudytitle'> Video & UI Designs</div>
             <img src='/images/squiglyline.svg' class="skillssquigly" />
         </div>
             <div class='case'>
@@ -346,6 +399,35 @@
             //         let closeimg = document.getElementById("menu")
             //         closeimg.classList.add('hide')
             //     }
+
+                            let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
 
     </script>
     </div>
