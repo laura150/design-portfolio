@@ -218,7 +218,7 @@
                         I am just an email away, Reach out now and lets bring your business into limelight!
                     </p>
                 </div>
-                <form id="my-form" class="cardform" action="https://formspree.io/f/mldgneqo" method="POST">
+                <form id="contactForm" class="cardform" action="https://formspree.io/f/mldgneqo" method="POST">
                     <p class="cardtextheading">Contact Me</p>
                     <input type="text" name="name" placeholder="Full Name" required >
                     <input type="email" name="email" placeholder="Email" required >
@@ -537,6 +537,41 @@
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
                 }
+
+                ////// FORM JS \\\\\\\\\\\\\\\\\\\\
+                
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevent default form submission behavior
+
+        const form = event.target;
+        
+        // Use Fetch API to send form data to Formspree via AJAX
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+        })
+        .then(function(response) {
+            if (response.ok) {
+                // Clear the form fields after a successful submission
+                form.reset();
+                alert("Thank you for your submission!");
+            } else {
+                alert("There was an issue with your submission.");
+            }
+        })
+        .catch(function(error) {
+            alert("There was an issue with your submission.");
+        });
+    });
+
+    ////////////// EMPTY FORM FIELD WHEN RETURNING TO WEBSITE ////////
+
+    window.onload = function() {
+        const form = document.getElementById("contactForm");
+        if (form) {
+            form.reset(); // Clears the form fields
+        }
+    }
 
     </script>
     </div>
