@@ -215,8 +215,9 @@ body {
 .links {
   width: 600px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+  
   
 }
 .linkbox {
@@ -250,6 +251,7 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
+ margin-left: 40px;
 }
 
 
@@ -1217,6 +1219,18 @@ textarea:focus::placeholder {
 @media screen and (max-width: 430px) {
   .links {
       width: 70% !important;
+    }
+
+    .firsttext{
+      font-size: 35px;
+      line-height: 55px;
+    }
+
+    .listtext{
+      font-size: 18px;
+    }
+    .text{
+      font-size: 18px;
     }
 }
 
