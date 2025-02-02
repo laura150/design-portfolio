@@ -6,6 +6,10 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .casestudytitle {
   font-size: 28px;
