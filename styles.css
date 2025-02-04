@@ -246,14 +246,16 @@ body {
     line-height: 30px;
 }
 .navbutton{
-  width: 150px;
+  width: 180px;
   height: 50px;
-  border: 4px solid #00FFFF ;
+  /* border: 4px solid #00FFFF ; */
   border-radius: 10px;
  display: flex;
  justify-content: center;
  align-items: center;
  margin-left: 40px;
+ background-color: #00FFFF;
+ 
 }
 
 
