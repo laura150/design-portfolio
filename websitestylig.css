@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+  }
+  
+  p {
+    color: rgb(223, 222, 222);
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+  .buttonsdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 290px;
+  }
+  .buttons {
+    width: 150px;
+      height: 50px;
+      border: 4px solid #00FFFF;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: 50px;
+  }
+  
+  .butt {
+    margin-top: 50px;
+  }
+  
+  .buttons:hover {
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .buttons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .essaysection{
+    width: 80%;
+    margin: auto;
+   
+  }
+  .mainheading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: rgb(240, 240, 240);
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+
+  .videosection{
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .videopreview{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 15px;
+  }
+
+  .heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(240, 240, 240);
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+
+  .pleft {
+    color: rgb(223, 222, 222);
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+
+  .subheading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(240, 240, 240);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .herocontainer{
+    width: 80%;
+    background-color: rgb(56, 56, 56);
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+  }
+
+
+  .herogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .heroimageheading{
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .heroimagep{
+    color: rgb(240, 240, 240);
+    line-height: 22px;
+    margin-bottom: 20px;
+
+  }
+  .herotextblock{
+   
+  
+  }
+
+  .heroimagecontainer{
+    border-radius: 15px;
+   
+  }
+
+  .heroimagecontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 1200px) {
+  
+.herocontainer{
+        width: 90%;
+        background-color: rgb(56, 56, 56);
+        padding: 50px;
+        margin-top: 30px;
+        border-radius: 15px;
+        margin: auto;
+        margin-bottom: 30px;
+ }
+}
+
+
+ @media screen and (max-width: 1000px) {
+  
+.herogrid{
+    grid-template-columns: 1fr;
+}
+
+.heroimagecontainer{
+    order: 1;
+  }
+  .herotextblock{
+   
+  order: 2;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+    .herocontainer{
+        padding-left: 30px;
+        padding-right: 30px;  
+      }
+
+      .videopreview{
+        width: 100%;
+        height: 100%;
+      }
+    
+ }
+
+    @media screen and (max-width: 450px) {
+        .herocontainer{  
+        width: 100%;         
+          }
+
+          .subheading{
+            font-size: 20px;
+          }
+          .essaysection{
+            width: 90%;
+          }
+          .mainheading{
+            font-size: 28px;
+          }
+        
+}
